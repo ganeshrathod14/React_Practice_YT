@@ -1,0 +1,38 @@
+* body {
+  background-color: rgb(19, 20, 20);
+}
+
+.parent {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  padding: 50px;
+  margin-left: 20px;
+  text-align: center;
+  background-color: #acbac4;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-family: Gill Sans MT;
+}
+
+.card img {
+  height: 140px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card h3 {
+  margin: 20px 0;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: azure;
+  color: black;
+  border-radius: 10px;
+}

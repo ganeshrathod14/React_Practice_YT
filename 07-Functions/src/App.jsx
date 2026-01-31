@@ -2,23 +2,28 @@ import React from 'react'
 
 const App = () => {
 
-   const moving=(val) => {
-    console.log(val)
-   }
-   const moving1=(val) => {
-    console.log(" Clicked ")
-   }
+  const scrolling = (val) => {
+
+    if( val > 0)
+    {
+      console.log("Sidha Scrolling")
+    }
+    else
+    {
+      console.log("Ulta Scrolling")
+    }
+
+  }
 
   return (
     <>
-    <div onMouseMove={(elem) => {
-      moving(elem.clientX,elem.clientY)
-    }} className='box'>
+    <div onWheel={(elem)=> {
+        scrolling(elem.deltaY)
+    }}>
+      <div className="page1">Page 1</div>
+      <div className="page2">Page 2</div>
+      <div className="page3">Page 3</div>
     </div>
-
-    <button onClick={(elem)=> {
-      moving1(elem.target.value)
-    }}> click me  </button>
 
     </>
   )

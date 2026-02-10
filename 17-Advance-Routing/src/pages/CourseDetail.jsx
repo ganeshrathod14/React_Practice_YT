@@ -3,13 +3,13 @@ import { useParams } from 'react-router-dom'
 
 const CourseDetail = () => {
 
-    const params = useParams(()=>{
-        console.log(params)
-    })
+    const param =  useParams() 
 
+      console.log(param.CourseID)
+    
   return (
     <div>
-        <h1>Course Detail</h1>
+        <h1> {param.CourseID} Course Detail</h1>
     </div>
   )
 }

@@ -1,0 +1,25 @@
+body{
+  margin: 0;
+}
+
+.Nav{
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.Nav2{
+  display: flex;
+  gap: 30px;
+}
+
+.light{
+  background-color: white;
+  color: black;
+}
+
+.dark{
+  background-color: black;
+  color: white;
+}
